@@ -6,6 +6,50 @@
     <p>Gursimran Hans</p>
         <p>BA Journalism – City, University of London</p>
         <p> <a href="https://www.gursimranhans.com/"> Full online portfolio</a></p>
+    
+    <style>
+        .headshot {
+            background-color: aqua;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .profile1,
+        .profile2 {
+            background-color: blueviolet;
+            margin: 2px;
+        }
+        
+        @media (min-width: 600px) {
+            #begin {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                grid-template-rows: auto;
+                grid-template-areas: /* prettier-ignore */
+                "hs p1"
+                /* prettier-ignore */
+                "hs p2";
+            }
+            .headshot {
+                grid-area: hs;
+            }
+            .profile1 {
+                grid-area: p1;
+            }
+            .profile2 {
+                grid-area: p2;
+            }
+        }
+    </style>
+
+    <div id="begin">
+        <div class="headshot">headshot</div>
+        <div class="profile1">profile 1</div>
+        <div class="profile2">profile 2</div>
+    </div>
            
     <h1>Summary</h1>
 
