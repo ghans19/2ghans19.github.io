@@ -1,0 +1,25 @@
+<h1>Calculator</h1>
+<p>Use this calculator for your basic addition needs!</p>
+Num1:
+<input id="X" type="number" value="300"> Num2:
+<input id="Y" type="number" value="50">
+<br>
+<button id="cal">Calculate</button>
+<br> Result:
+<input id="result" type="number">
+
+<script>
+    // a = document.getElementById("X").value
+    // b = document.getElementById("Y").value
+    // result = (+a) + (+b)
+    function calculate() {
+        a = +document.getElementById("X").value
+        b = +document.getElementById("Y").value
+        result = (a) + (b)
+        document.getElementById("result").value = result
+    }
+    document.getElementById("cal").addEventListener('click', calculate)
+    // result = Math.pow(a, b)
+    // console.log('result:')
+    // console.log(result)
+</script>
