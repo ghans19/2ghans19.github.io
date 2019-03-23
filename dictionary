@@ -1,0 +1,23 @@
+d = {'a': 1, 'b': 2}
+{a: 1, b: 2}
+d['a']
+1
+d['b']
+2
+d = {'a': 1, 'b': 2, 'c': 'sdlfjsdf'}
+{a: 1, b: 2, c: "sdlfjsdf"}
+d['c']
+"sdlfjsdf"
+d['a']
+1
+d['a'] = 5
+5
+d
+{a: 5, b: 2, c: "sdlfjsdf"}
+
+students = [
+{'name': 'A', 'grade': 90}, 
+{'name': 'B', 'grade': 80},
+{'name': 'C', 'grade': 100},
+{'name': 'D', 'grade': 70},
+]
